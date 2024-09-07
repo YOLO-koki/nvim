@@ -17,11 +17,6 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
   spec = {
     -- add LazyVim and import its plugins
-    -- astro
-    { "LazyVim/LazyVim", import = "lazyvim.plugins" },
-    { import = "lazyvim.plugins.extras.lang.astro" },
-    { import = "plugins" },
-
     { "LazyVim/LazyVim", import = "lazyvim.plugins", opts = {
       colorscheme = "solarized-osaka",
     } },
@@ -34,6 +29,8 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.go" },
     { import = "lazyvim.plugins.extras.coding.copilot-chat" },
     { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
+    -- astro
+    { import = "lazyvim.plugins.extras.lang.astro" },
     -- import/override with your plugins
     { import = "plugins" },
   },
